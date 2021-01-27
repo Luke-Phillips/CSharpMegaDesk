@@ -123,7 +123,6 @@ namespace MegaDesk
             this.Controls.Add(this.picDesk);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(616, 450);
-            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(616, 450);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

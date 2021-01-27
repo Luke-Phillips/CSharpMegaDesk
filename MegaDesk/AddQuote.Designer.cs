@@ -35,13 +35,13 @@ namespace MegaDesk
             this.numNumberOfDrawers = new System.Windows.Forms.NumericUpDown();
             this.listRushOrderOption = new System.Windows.Forms.ComboBox();
             this.listDesktopMaterial = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpDeskDetails = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textCustomerName = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grpOrderDetails = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -53,8 +53,8 @@ namespace MegaDesk
             ((System.ComponentModel.ISupportInitialize)(this.numDeskWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDeskDepth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfDrawers)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.grpDeskDetails.SuspendLayout();
+            this.grpOrderDetails.SuspendLayout();
             this.SuspendLayout();
             // 
             // numDeskWidth
@@ -136,22 +136,22 @@ namespace MegaDesk
             this.listDesktopMaterial.Size = new System.Drawing.Size(121, 21);
             this.listDesktopMaterial.TabIndex = 6;
             // 
-            // groupBox1
+            // grpDeskDetails
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.numDeskWidth);
-            this.groupBox1.Controls.Add(this.listDesktopMaterial);
-            this.groupBox1.Controls.Add(this.numDeskDepth);
-            this.groupBox1.Controls.Add(this.numNumberOfDrawers);
-            this.groupBox1.Location = new System.Drawing.Point(318, 76);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 156);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Desk Details";
+            this.grpDeskDetails.Controls.Add(this.label4);
+            this.grpDeskDetails.Controls.Add(this.label3);
+            this.grpDeskDetails.Controls.Add(this.label2);
+            this.grpDeskDetails.Controls.Add(this.label1);
+            this.grpDeskDetails.Controls.Add(this.numDeskWidth);
+            this.grpDeskDetails.Controls.Add(this.listDesktopMaterial);
+            this.grpDeskDetails.Controls.Add(this.numDeskDepth);
+            this.grpDeskDetails.Controls.Add(this.numNumberOfDrawers);
+            this.grpDeskDetails.Location = new System.Drawing.Point(318, 76);
+            this.grpDeskDetails.Name = "grpDeskDetails";
+            this.grpDeskDetails.Size = new System.Drawing.Size(270, 156);
+            this.grpDeskDetails.TabIndex = 5;
+            this.grpDeskDetails.TabStop = false;
+            this.grpDeskDetails.Text = "Desk Details";
             // 
             // label4
             // 
@@ -200,18 +200,18 @@ namespace MegaDesk
             this.textCustomerName.Size = new System.Drawing.Size(217, 20);
             this.textCustomerName.TabIndex = 1;
             // 
-            // groupBox2
+            // grpOrderDetails
             // 
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textCustomerName);
-            this.groupBox2.Controls.Add(this.listRushOrderOption);
-            this.groupBox2.Location = new System.Drawing.Point(20, 76);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(270, 156);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Order Details";
+            this.grpOrderDetails.Controls.Add(this.label6);
+            this.grpOrderDetails.Controls.Add(this.label5);
+            this.grpOrderDetails.Controls.Add(this.textCustomerName);
+            this.grpOrderDetails.Controls.Add(this.listRushOrderOption);
+            this.grpOrderDetails.Location = new System.Drawing.Point(20, 76);
+            this.grpOrderDetails.Name = "grpOrderDetails";
+            this.grpOrderDetails.Size = new System.Drawing.Size(270, 156);
+            this.grpOrderDetails.TabIndex = 0;
+            this.grpOrderDetails.TabStop = false;
+            this.grpOrderDetails.Text = "Order Details";
             // 
             // label6
             // 
@@ -294,8 +294,8 @@ namespace MegaDesk
             this.Controls.Add(this.btnGetQuote);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpOrderDetails);
+            this.Controls.Add(this.grpDeskDetails);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(616, 450);
             this.MinimizeBox = false;
@@ -307,9 +307,9 @@ namespace MegaDesk
             ((System.ComponentModel.ISupportInitialize)(this.numDeskWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDeskDepth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numNumberOfDrawers)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grpDeskDetails.ResumeLayout(false);
+            this.grpOrderDetails.ResumeLayout(false);
+            this.grpOrderDetails.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,9 +322,9 @@ namespace MegaDesk
         private System.Windows.Forms.NumericUpDown numNumberOfDrawers;
         private System.Windows.Forms.ComboBox listRushOrderOption;
         private System.Windows.Forms.ComboBox listDesktopMaterial;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpDeskDetails;
         private System.Windows.Forms.TextBox textCustomerName;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grpOrderDetails;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
